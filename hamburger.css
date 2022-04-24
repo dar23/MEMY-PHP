@@ -1,0 +1,55 @@
+.hamburger {
+  position: absolute;
+  top: 2em;
+  right: 3.5%;
+  margin-left: 2em;
+  margin-top: 12px;
+  width:2em;
+  height: 45px;
+  z-index: 5;
+
+}
+
+.hamburger div {
+  position: relative;  
+  width: 2.5em;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #5e5e5e;
+  margin-top: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+ @media only screen and (max-width: 699px) {
+
+.hamburger {
+ 
+  left: 0px ;
+  top:10px;
+  
+  
+
+}
+
+
+
+}
+
